@@ -25,7 +25,7 @@ namespace DriveRemap
         {
             using (var netuse = CreateProcess("net use"))
             {
-                var result = GetProcessOutput(netuse).Replace("New connections will be remembered.", "");
+                var result = GetProcessOutput(netuse).Replace("New connections will be remembered.", "").Replace("Microsoft Windows Network", "");
 
                 var regex = new Regex($@"(\w:)\s*\\\\(?:{options.OldServerName})(.*)\s", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
