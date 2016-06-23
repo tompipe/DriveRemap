@@ -5,16 +5,16 @@ DriveRemap is a tool to update drive mappings during a server migration. It will
 ## Usage ##
 
 ### Moving drives using NETBIOS Names ###
-  DriveRemap OldServerName NewServerName   
+  DriveRemap.exe OldServerName NewServerName   
 
-  If any drives with paths to \\OldServer\Share exist, they will be remapped to \\NewServer\Share
+  If any drives with paths to \\\\OldServer\Share exist, they will be remapped to \\\\NewServer\Share
 
 ### Moving drives using IP Addresses ###
-  DriveRemap 10.1.100.1 10.1.100.2
+  DriveRemap.exe 10.1.100.1 10.1.100.2
 
-  If any drives with paths to \\10.1.100.1\Share exist, they will be remapped to \\10.1.100.2\Share
+  If any drives with paths to \\\\10.1.100.1\Share exist, they will be remapped to \\\\10.1.100.2\Share
   
 ### Moving drives to a new server and path ###
-  DriveRemap OldServerName NewServerName\NewPath
+  DriveRemap.exe OldServerName NewServerName\NewPath
 
-  If any drives with paths to \\OldServerName\Share exist, they will be remapped to \\NewServerName\NewPath\Share
+  If any drives with paths to \\\\OldServerName\Share exist, they will be remapped to \\\\NewServerName\NewPath\Share
